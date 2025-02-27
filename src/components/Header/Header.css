@@ -1,0 +1,8 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: inset 0px 0px 7px 2px #00d9ff9a;
+}

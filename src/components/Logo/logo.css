@@ -1,0 +1,24 @@
+.content_logo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        img{
+            width: 100%;
+            height: 100%;
+            animation: girar 5s linear infinite;
+        }
+}
+
+/* movimiento del logo girando */
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
