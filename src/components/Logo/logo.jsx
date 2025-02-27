@@ -1,9 +1,9 @@
 import './logo.css';
-import logo from '../../assets/react.svg'
+import imgLogo from '../../assets/react.svg'
 const Logo = () =>
     <>
         <div className="content_logo">
-            <img className='logo' src={logo} alt="Logo" />
+            <img className='logo' src={imgLogo} alt="Logo" />
         </div>
     </>;
 
