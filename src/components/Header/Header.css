@@ -1,8 +1,23 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10px;
-    border-bottom: 1px solid #e0e0e0;
+.header {
+    padding: 10px;
     box-shadow: inset 0px 0px 7px 2px #00d9ff9a;
+    background-color: white;
+
+    .nav-item {
+        margin: 0 10px;
+    }
+
+    .nav-link {
+        color: black;
+        border: 1px solid #00d9ff9a;
+        width: 90px;
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0px 0px 2px 1px #00d9ff9a;
+
+        &:hover {
+            box-shadow: inset 0px 0px 7px 2px #00d9ff9a;
+        }
+    }
+
 }
