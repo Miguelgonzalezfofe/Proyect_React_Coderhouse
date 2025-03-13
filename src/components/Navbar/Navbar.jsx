@@ -1,6 +1,7 @@
 import imgLogo from "../../assets/react.svg";
 import CardWidget from "../CartWidget/CartWidget";
-import  '../Logo/logo.css';
+import '../Navbar/logo.css';
+import './Navbar.css';
 const objetoNav = [
     { itemEntrada: ["Inicio", "Nosotros", "Productos"] },
     { linkEntrada: ["#", "#", "#"] },
@@ -8,7 +9,7 @@ const objetoNav = [
     { linkLogo: "#" }
 ]
 const Navbar = () => {
-    let [itemEntrada, linkEntrada, logo, linkLogo] = objetoNav;
+    let [itemEntrada, linkEntrada, linkLogo] = objetoNav;
     let items = itemEntrada.itemEntrada;
     let links = linkEntrada.linkEntrada;
     return <>

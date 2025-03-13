@@ -1,0 +1,14 @@
+.logo {
+    width: 100px;
+    height: 100px;
+    animation: spin-logo 4s linear infinite;
+}
+
+@keyframes spin-logo {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
