@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 componentes_ejer
+clases3
 
 # Editor directories and files
 .vscode/*

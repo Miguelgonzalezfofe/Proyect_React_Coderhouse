@@ -1,4 +1,4 @@
-.loader {
+.loaderReact {
     width: 96px;
     box-sizing: content-box;
     height: 48px;
@@ -11,7 +11,7 @@
     animation: 3s yinYang linear infinite;
 }
 
-.loader:before {
+.loaderReact:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -24,7 +24,7 @@
     box-sizing: content-box;
 }
 
-.loader:after {
+.loaderReact:after {
     content: "";
     position: absolute;
     top: 50%;
