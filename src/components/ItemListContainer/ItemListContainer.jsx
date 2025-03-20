@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 export default function ItemListContainer() {
     const [loading, setLoading] = useState(true);
     const [productItems, setProductItems] = useState([]);
+    const [productosFiltrados, setProductosFiltrados] = useState(false);
 
     useEffect(() => {
         setTimeout(() => {
@@ -27,7 +28,10 @@ export default function ItemListContainer() {
 
         <div className="itemListContainer" >
             <h2 className="text-center">Productos</h2>
-            {loading ? <span class="loader"></span> : <ItemList items={productItems} />}
+            {loading ? <span class="loader"></span> : <ItemList items={productItems} filtradoProductos={setProductosFiltrados} />}
+        </div>
+        <div className="">
+            {productosFiltrados && <ItemList items={productosFiltrados} />}
         </div>
     </>;
 }

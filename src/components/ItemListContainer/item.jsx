@@ -1,5 +1,5 @@
 import './item.css'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 
 const Item = (item) => {
@@ -32,6 +32,15 @@ const Item = (item) => {
 
         }
 
+        const productoFiltrado =()=>{
+            const [productFiltrado, setProductFiltrado] = useState(false)
+
+            useEffect(() => {
+                
+            })
+
+        }
+
         return <>
             <div className="containerBtn">
                 <div className="btn_num">
@@ -39,7 +48,11 @@ const Item = (item) => {
                     <p type="number" ref={input} >{product}</p>
                     <button className='btn border' onClick={handleSum}>+</button>
                 </div>
-                <a href="#" className="btn btn-primary w-100" onClick={addProduct}>Comprar</a>
+                <div className="d-grid gap-2">
+                    <a href="#" className="btn btn-primary w-100" onClick={addProduct}>Comprar</a>
+                    <a href="#" className="btn btn-primary w-100" onClick={addProduct}>ver detaller</a>
+                </div>
+
             </div>
 
         </>
